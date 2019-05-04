@@ -1,5 +1,5 @@
 --[[
-    ASD1233456 8/18/2016
+    Error 401 8/18/2016
     a script designed for displaying keypad entrys on a NodeMCU from a RobotDyn 3x4 
     Analog Output Keyboard. 
 
@@ -10,9 +10,9 @@
 --If this table does not work please see findVoltageTable.lua to create your own.
 
 voltage = {    543, 1024, 993, 911, --0,1,2,3,  | NOTE: 
-                837, 778, 726, --4,5,6,         |    0 is the first adc value on the list, but 
-                680, 638, 603, --7,8,9,         |    it is NOT the 1st Button on the 3x4 keypad.
-                571, 517  --10, 11,             |    This was to keep the indexes in sync with 
+                837, 778, 726, 	    --4,5,6,    |    0 is the first adc value on the list, but 
+		680, 638, 603, 	    --7,8,9,    |    it is NOT the 1st Button on the 3x4 keypad.
+                571, 517  	    --10, 11,   |    This was to keep the indexes in sync with 
           }             --                      |    their real values.
 
 function getKeyPressed(adcV)
